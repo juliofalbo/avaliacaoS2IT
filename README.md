@@ -1,6 +1,6 @@
 # Avaliação S2IT
 
-Resultado da Avaliação enviada pela S2IT
+Os resultados, assim como suas implementações, se encontram no link: [https://s2it-avaliacao.herokuapp.com/](https://s2it-avaliacao.herokuapp.com/)
 
 ## Iniciando no Projeto
 
