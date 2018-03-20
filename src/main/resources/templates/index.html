@@ -1,0 +1,673 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+  <head>
+    <title>Avaliação S2iT - Júlio Falbo</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    
+    <!-- @todo: fill with your company info or remove -->
+    <meta name="description" content="" />
+    <meta name="author" content="Themelize.me" />
+    
+    <!-- Bootstrap v4.0.0 CSS via CDN -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" />
+    
+    <!-- Plugins required on all pages NOTE: Additional non-required plugins are loaded ondemand as of AppStrap 2.5 -->
+    
+    <!-- Theme style -->
+    <link href="assets/css/theme-style.min.css" rel="stylesheet" />
+    
+    <!--Your custom colour override-->
+    <link href="assets/css/colour-blue.css" id="colour-scheme" rel="stylesheet">
+    
+    <!-- Your custom override -->
+    <link href="assets/css/custom-style.css" rel="stylesheet" />
+    
+    
+    <!-- Optional: ICON SETS -->
+    <!-- Iconset: Font Awesome 5.0.4 via CDN -->
+    <link href="https://use.fontawesome.com/releases/v5.0.4/css/all.css" rel="stylesheet" />
+    <!-- Iconset: flag icons - http://lipis.github.io/flag-icon-css/ -->
+    <link href="assets/plugins/flag-icon-css/css/flag-icon.min.css" rel="stylesheet" />
+    <!-- Iconset: ionicons - http://ionicons.com/ -->
+    <link href="http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css" rel="stylesheet" />
+    <!-- Iconset: Linearicons - https://linearicons.com/free -->
+    <link href="https://cdn.linearicons.com/free/1.0.0/icon-font.min.css" rel="stylesheet" />
+    
+    
+    <!-- Le fav and touch icons - @todo: fill with your icons or remove, try https://realfavicongenerator.net -->
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/favicons/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/favicons/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/favicons/favicon-16x16.png" />
+    <link rel="manifest" href="assets/favicons/manifest.json" />
+    <link rel="shortcut icon" href="assets/favicons/favicon.ico" />
+    <meta name="msapplication-config" content="assets/favicons/browserconfig.xml" />
+    <meta name="theme-color" content="#ffffff" />
+    
+    
+    <!-- Google fonts -->
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,700,300' rel='stylesheet' type='text/css' />
+    <link href='http://fonts.googleapis.com/css?family=Rambla:400,700' rel='stylesheet' type='text/css' />
+    <link href='http://fonts.googleapis.com/css?family=Calligraffitti' rel='stylesheet' type='text/css' />
+    <link href='http://fonts.googleapis.com/css?family=Roboto+Slab:400,700' rel='stylesheet' type='text/css' />
+    
+    <!--Plugin: Retina.js (high def image replacement) - @see: http://retinajs.com/-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/retina.js/1.3.0/retina.min.js"></script>
+  </head>
+  
+  <!-- ======== @Region: body ======== -->
+  <body class="page page-onepager header-ontop header-compact-sticky page-index-onepager-image-full-height navbar-layout-default">
+    
+    <!-- @plugin: page loading indicator, delete to remove loader -->
+    <div class="page-loader" data-toggle="page-loader"></div>
+    
+    <a href="#content" id="top" class="sr-only">Skip to content</a> 
+    
+    <!-- ======== @Region: #highlighted ======== -->
+    <div id="highlighted">
+      <!-- Image Banner: Use the the data-bg-img functionality to create a simple image banner Use spacer classes to make the banner larger with padding, allows for easy responsive changes too see: elements-ctas.htm To make the banner full height/screen add the attributes: data-toggle="full-height" data-offset="#header" -->
+      <div class="bg-white overlay overlay-primary overlay-op-8 text-center px-3 py-5 py-lg-10 flex-valign" data-bg-img="assets/img/backgrounds/keyboard-coffee.jpg" data-css='{"background-position": "center bottom","background-attachment": "fixed"}' data-toggle="full-height">
+        <h2 class="display-4 text-white" data-animate="fadeIn" data-animate-delay="0.2">
+          Avaliação para <span class="font-weight-bold">Processo de Seleção!</span>
+        </h2>
+        <h3 class="text-grey font-weight-normal" data-animate="fadeIn" data-animate-delay="0.35">
+          Feito por: Júlio Falbo 
+        </h3>
+        <hr class="hr-inverse hr-lg w-20 mx-auto my-4" data-animate="fadeIn" data-animate-delay="0.45" />
+        <div> <a href="#about" class="btn btn-dark btn-rounded btn-lg py-lg-3 px-lg-5" data-toggle="scroll-link" data-animate="fadeIn" data-animate-delay="0.55">Ver Avaliação</a>
+</div>
+      </div>
+    </div>
+    
+    <!-- ======== @Region: #header ======== -->
+    <div id="header">
+      
+      <div data-toggle="sticky">
+        
+        <!--Header & Branding region-->
+        <div class="header header-transparent header-dark border-dark border-op-2 sticky-header-dark sticky-bg-dark sticky-bg-op-8">
+          <!-- all direct children of the .header-inner element will be vertically aligned with each other you can override all the behaviours using the flexbox utilities (flexbox.htm) All elements with .header-brand & .header-block-flex wrappers will automatically be aligned inline & vertically using flexbox, this can be overridden using the flexbox utilities (flexbox.htm) Use .header-block to stack elements within on small screen & "float" on larger screens use .order-first or/and .order-last classes to make an element show first or last within .header-inner or .headr-block elements -->
+          <div class="header-inner container">
+            <!--branding/logo -->
+            <div class="header-brand">
+              <a class="header-brand-text" href="index.html" title="Home">
+                  <img src="assets/img/logoS2it.png">
+              </a>
+              <div class="header-divider d-none d-lg-block"></div>
+              <div class="header-slogan d-none d-lg-block">Avaliação</div>
+            </div>
+            <!-- other header content -->
+            <div class="header-block order-lg-12">
+              <!-- mobile collapse menu button - data-toggle="collapse" = default BS menu - data-toggle="jpanel-menu" = jPanel Menu - data-toggle="overlay" = Overlay Menu -->
+              <a href="#top" class="btn btn-link btn-icon text-white sticky-text-light header-btn float-right d-lg-none" data-toggle="collapse" data-target=".navbar-main" data-direction="right"> <i class="fa fa-bars"></i> </a>
+            </div>
+            
+            <div class="navbar navbar-expand-md navbar-expand-collapse navbar-static-top">
+              <!--everything within this div is collapsed on mobile-->
+              <div class="navbar-main collapse">
+                <!--main navigation-->
+                <ul class="nav navbar-nav navbar-nav-onepager">
+                  <li class="nav-item">
+                    <a href="#top" data-toggle="scroll-link" class="nav-link"> <i class="fa fa-home nav-link-icon"></i> <span class="d-none">Home</span> </a>
+                  </li>
+                  
+                  <li class="nav-item"> <a href="#about" data-toggle="scroll-link" class="nav-link"> Questões </a> </li>
+                  <li class="nav-item"> <a href="#features" data-toggle="scroll-link" class="nav-link"> Desafios </a> </li>
+                </ul>
+              </div>
+              <!--/.navbar-collapse -->
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <!-- ======== @Region: #content ======== -->
+    <div id="content" class="p-0">
+      <!-- About -->
+      <div id="about" class="py-3 pt-lg-6 pb-lg-0">
+        <div class="container">
+          <div data-animate="fadeIn" data-animate-duration="0.8">
+            <hr class="hr-lg mt-0 mb-3 w-10 mx-auto hr-primary" />
+            <h2 class="text-center text-uppercase font-weight-bold my-0">
+              Questões da Avaliação
+            </h2>
+            <h5 class="text-center font-weight-light mt-2 mb-0 text-muted">
+              Questões múltipla escolha
+            </h5>
+            <hr class="mb-5 w-50 mx-auto" />
+          </div>
+          <div class="row">
+              <div class="col-sm-4">
+                <ul class="nav nav-tabs nav-stacked nav-tabs-bold">
+                  <li class="nav-item">
+                    <a href="#vtab-extended1" class="nav-link active" data-toggle="tab">
+                      <span class="font-weight-bold">Questão 1</span> 
+                      <i class="fa fa-angle-right"></i> 
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="#vtab-extended2" class="nav-link" data-toggle="tab">
+                      <span class="font-weight-bold">Questão 2</span> 
+                      <i class="fa fa-angle-right"></i> 
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="#vtab-extended3" class="nav-link" data-toggle="tab">
+                      <span class="font-weight-bold">Questão 3</span> 
+                      <i class="fa fa-angle-right"></i> 
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="#vtab-extended4" class="nav-link" data-toggle="tab">
+                      <span class="font-weight-bold">Questão 4</span> 
+                      <i class="fa fa-angle-right"></i> 
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="#vtab-extended5" class="nav-link" data-toggle="tab">
+                      <span class="font-weight-bold">Questão 5</span> 
+                      <i class="fa fa-angle-right"></i> 
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="#vtab-extended6" class="nav-link" data-toggle="tab">
+                      <span class="font-weight-bold">Questão 6</span> 
+                      <i class="fa fa-angle-right"></i> 
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="#vtab-extended7" class="nav-link" data-toggle="tab">
+                      <span class="font-weight-bold">Questão 7</span> 
+                      <i class="fa fa-angle-right"></i> 
+                    </a>
+                  </li>
+                </ul>
+              </div>
+              <div class="tab-content col-sm-8">
+                <div class="tab-pane fade show active" id="vtab-extended1">
+                  <h3>
+                   <i class="fa fa-edit text-primary"></i> Questão 1
+                  </h3>
+                  <br/>
+                  <h4>
+                  	Acerca de sistemas de desenvolvimento web, assinale a opção correta.
+                  </h4>
+                  <hr/>
+                  
+                  <div>
+                  	<i class="fa fa-check-square text-primary"></i> 
+                  	<strong class="text-primary">A) Servlet é uma classe do Java que possibilita ampliar os recursos de servidores web, desenvolvida para permitir conteúdos dinâmicos orientados ao usuário.</strong>
+                  </div>
+                  <br />
+                  <div>
+                  	<i class="fa fa-square text-primary"></i> 
+                  	B) Para utilizar bancos de dados relacionais em aplicações desenvolvidas em JSP, é obrigatória a utilização do Hibernate, que é um framework que realiza o mapeamento objeto/relacional.
+                  	<p>
+		              <a class="btn btn-danger btn-sm" data-toggle="collapse" href="#collapseJustificativaB" aria-expanded="false" aria-controls="collapseExample"> Justificativa </a> 
+		            </p>
+		            <div class="collapse" id="collapseJustificativaB">
+		              <div class="card card-body"><strong class="text-danger"> A utilização do Hibernate não é obrigatória na camada de persistência, podemos utilizar acesso JDBC direto. </strong></div>
+		            </div>
+                  </div>
+                  <br />
+                  <div>
+                  	<i class="fa fa-square text-primary"></i> 
+                  	C) O Ajax permite interagir com dados textuais nos formatos UTF-8 e XML, porém restringe o acesso a JSON (Java Script Object Notation) e a bancos de dados relacionais.
+                  	<p>
+		              <a class="btn btn-danger btn-sm" data-toggle="collapse" href="#collapseJustificativaC" aria-expanded="false" aria-controls="collapseExample"> Justificativa </a> 
+		            </p>
+		            <div class="collapse" id="collapseJustificativaC">
+		              <div class="card card-body"><strong class="text-danger"> É possível utilizar o protocolo SOAP com o Ajax e não é restrito a bancos relacionais (vide integração com Mongo) </strong></div>
+		            </div>
+                  </div>
+                  <br />
+                  <div>
+                  	<i class="fa fa-square text-primary"></i> 
+                  	D) No XMLHttpRequest, utilizado para trocar dados com um servidor, com o intuito de melhorar sua usabilidade, o método open () aceita somente requisições no modo asynchronous.
+                  	<p>
+		              <a class="btn btn-danger btn-sm" data-toggle="collapse" href="#collapseJustificativaD" aria-expanded="false" aria-controls="collapseExample"> Justificativa </a> 
+		            </p>
+		            <div class="collapse" id="collapseJustificativaD">
+		              <div class="card card-body"><strong class="text-danger"> Existe uma sobrecarga do método open onde é possível passar o tipo de comportamento através de um boolean como parâmetro. </strong></div>
+		            </div>
+                  </div>
+                  <br />
+                  <div>
+                  	<i class="fa fa-square text-primary"></i> 
+                  	E) O JSF (Java Server Faces) permite usar tags customizadas limitadas a páginas JSP, com vistas a encapsular a segurança na forma nativa do acesso aos JavaBeans.
+                  	<p>
+		              <a class="btn btn-danger btn-sm" data-toggle="collapse" href="#collapseJustificativaE" aria-expanded="false" aria-controls="collapseExample"> Justificativa </a> 
+		            </p>
+		            <div class="collapse" id="collapseJustificativaE">
+		              <div class="card card-body"><strong class="text-danger"> A utilização de tags customizadas não se limita a páginas JSP, podemos usar as tags em arquivos XHTML. </strong></div>
+		            </div>
+                  </div>
+                </div>
+                
+                
+                <div class="tab-pane fade" id="vtab-extended2">
+                  <h3>
+                   <i class="fa fa-edit text-primary"></i> Questão 2
+                  </h3>
+                  <br/>
+                  <h4>
+                  	Um programador web foi contratado para desenvolver um site utilizando HTML, CSS, JSP e Servlets. Para tanto, deve usar um servidor escrito em Java, que não é contêiner EJB, mas é utilizado como servlet container, denominado:
+                  </h4>
+                  <hr />
+                  <div>
+                  	<i class="fa fa-square text-primary"></i> 
+                  	A) GlassFish
+                  </div>
+                  <br />
+                  <div>
+                  	<i class="fa fa-square text-primary"></i> 
+                  	B) JBoss
+                  </div>
+                  <br />
+                  <div>
+                  	<i class="fa fa-square text-primary"></i> 
+                  	C) WebLogic
+                  </div>
+                  <br />
+                  <div>
+                  	<i class="fa fa-check-square text-primary"></i> 
+                  	<strong class="text-primary">D) Jetty.</strong>
+                  </div>
+                  <br />
+                  <div>
+	                  <p>
+	                  	<i class="fa fa-square text-primary"></i> 
+	                  	E) WebSphere
+	                  </p>
+						<p>
+							<a class="btn btn-danger btn-sm" data-toggle="collapse" href="#collapseJustificativaQuestao2" aria-expanded="false" aria-controls="collapseExample"> Justificativa </a> 
+						</p>
+		            <div class="collapse" id="collapseJustificativaQuestao2">
+		              <div class="card card-body"><strong class="text-danger"> Todos as outras opções são Application Servers e não apenas um Servlet Container. </strong></div>
+		            </div>
+                  </div>
+                </div>
+                
+                
+                <div class="tab-pane fade" id="vtab-extended3">
+                  <h3>
+                   <i class="fa fa-edit text-primary"></i> Questão 3
+                  </h3>
+                  <br/>
+                  <h4>
+                  	São apenas tipos de componentes executados em servidores Web:
+                  </h4>
+                  <hr/>
+                  
+                  <div>
+                  	<i class="fa fa-square text-primary"></i> 
+                  	A) Beans, Servlets e J2EE.
+                  	<p>
+		              <a class="btn btn-danger btn-sm" data-toggle="collapse" href="#collapseJustificativaQuestao3A" aria-expanded="false" aria-controls="collapseExample"> Justificativa </a> 
+		            </p>
+		            <div class="collapse" id="collapseJustificativaQuestao3A">
+		              <div class="card card-body">
+		              	<strong class="text-danger"> 
+		              		J2EE não é um componente, é um conjunto de especificações com o objetivo de facilitar o desenvolvimento de softwares utilizando a linguagem Java. 
+		              	</strong>
+		              </div>
+		            </div>
+                  </div>
+                  
+                  <br/>
+                  
+                  <div>
+                  	<i class="fa fa-square text-primary"></i> 
+                  	B) JVM, Servlets e JSP.
+                  	<p>
+		              <a class="btn btn-danger btn-sm" data-toggle="collapse" href="#collapseJustificativaQuestao3B" aria-expanded="false" aria-controls="collapseExample"> Justificativa </a> 
+		            </p>
+		            <div class="collapse" id="collapseJustificativaQuestao3B">
+		              <div class="card card-body">
+		              	<strong class="text-danger">
+		              		JVM (Java Virtual Machine) não é um componente executado em servidor web. A JVM é basicamente uma ponte entre a linguagem Java e o Sistema Operacional, permitindo então que softwares Java rodem em qualquer SO. 
+		              	</strong>
+		              </div>
+		            </div>
+                  </div>
+                  
+                  <br />
+                  
+                  <div>
+                  	<i class="fa fa-check-square text-primary"></i> 
+                  	<strong class="text-primary">C) Beans, Servlets e JSP.</strong>
+                  </div>
+                  
+                  <br/>
+                  
+                  <div>
+                  	<i class="fa fa-square text-primary"></i> 
+                  	D) Beans, Swing e JSP.
+                  	<p>
+		              <a class="btn btn-danger btn-sm" data-toggle="collapse" href="#collapseJustificativaQuestao3D" aria-expanded="false" aria-controls="collapseExample"> Justificativa </a> 
+		            </p>
+		            <div class="collapse" id="collapseJustificativaQuestao3D">
+		              <div class="card card-body">
+		              	<strong class="text-danger"> 
+		              		Swing não é um componente executado em servidor web, sua aplicação é voltada para desenvolvimento Desktop (JSE). 
+		             	</strong>
+		             </div>
+		            </div>
+                  </div>
+                  
+                  <br />
+                  
+                  <div>
+                  	<i class="fa fa-square text-primary"></i> 
+                  	E) Beans, Swing e JVM.
+                  	<p>
+		              <a class="btn btn-danger btn-sm" data-toggle="collapse" href="#collapseJustificativaQuestao3E" aria-expanded="false" aria-controls="collapseExample"> Justificativa </a> 
+		            </p>
+		            <div class="collapse" id="collapseJustificativaQuestao3E">
+		              <div class="card card-body">
+		              	<strong class="text-danger"> 
+		              		Swing não é um componente executado em servidor web, sua aplicação é voltada para desenvolvimento Desktop (JSE). 
+		             	</strong>
+		             </div>
+		            </div>
+                  </div>
+                  
+                </div>
+                
+                <div class="tab-pane fade" id="vtab-extended4">
+                  <h3>
+                   <i class="fa fa-edit text-primary"></i> Questão 4
+                  </h3>
+                  <br/>
+                  <h4>
+                  	Analise os itens a seguir sobre JEE e EJB. 
+                  </h4>
+                  <hr/>
+                  
+                  <div>
+                  	<i class="fa fa-check text-primary"></i> 
+                  	<i>I. Um servidor J2EE fornece contêineres EJB e Web.</i>
+                  </div>
+                  
+                  <br/>
+                  
+                  <div>
+                  	<i class="fa fa-check text-primary"></i> 
+                  	<i>II. O contêiner EJB gerencia a execução de EJBs em aplicações J2EE.</i>
+                  </div>
+                  
+                  <br/>
+                  
+                  <div>
+                  	<i class="fa fa-check text-primary"></i> 
+                  	<i>III. O contêiner Web gerencia a execução de páginas JSP e componentes servlet em aplicações J2EE.</i>
+                  </div>
+                  
+                  <br/>
+                  
+                  <div>
+                  	<i class="fa fa-check text-primary"></i> 
+                  	<i>IV. Um session bean representa um único cliente dentro do servidor J2EE. Para acessar um aplicativo que é instalado no servidor, o cliente invoca os métodos do session bean.</i>
+                  </div>
+                  
+                  <br />
+                  
+                  <h4>
+                  	Está correto o que se afirmar em:
+                  </h4>
+                  
+                  <hr />
+                  
+                  <div>
+                  	<i class="fa fa-check-square text-primary"></i> 
+                  	<strong class="text-primary">A) I, II, III e IV.</strong>
+                  </div>
+                  
+                  <br/>
+                  
+                  <div>
+                  	<i class="fa fa-square text-primary"></i> 
+                  	B) I e II, apenas.
+                  </div>
+                  
+                  <br/>
+                  
+                  <div>
+                  	<i class="fa fa-square text-primary"></i> 
+                  	C) I, III e IV, apenas.
+                  </div>
+                  
+                  <br/>
+                  
+                  <div>
+                  	<i class="fa fa-square text-primary"></i> 
+                  	D) I e IV, apenas.
+                  </div>
+                  
+                  <br/>
+                  
+                  <div>
+                  	<i class="fa fa-square text-primary"></i> 
+                  	E) III e IV, apenas.
+                  </div>
+                  
+                </div>
+                
+                <div class="tab-pane fade" id="vtab-extended5">
+                  <h3>
+                   <i class="fa fa-edit text-primary"></i> Questão 5
+                  </h3>
+                  <br/>
+                  <h4>
+                  	Spring Framework é uma plataforma Java completa que fornece suporte de infraestrutura para o desenvolvimento de aplicações Java. Acerca das características do framework Spring 3.0, assinale a opção correta.
+
+                  </h4>
+                  <hr/>
+                  
+                  <div>
+                  	<i class="fa fa-check-square text-primary"></i> 
+                  	<strong class="text-primary">A) Na arquitetura Spring MVC Web, o Validator é uma classe opcional que pode ser invocada para validar dados de formulários.</strong>
+                  	<p>
+		              <a class="btn btn-primary btn-sm" data-toggle="collapse" href="#collapseJustificativaQuestao5A" aria-expanded="false" aria-controls="collapseExample"> Justificativa </a> 
+		            </p>
+		            <div class="collapse" id="collapseJustificativaQuestao5A">
+		              <div class="card card-body">
+			              <strong class="text-primary"> 
+			              	Sim, podemos criar classes implementando a Interface Validator do pacote org.springframework.validation para validar os dados de um Modelo recebidos pelo Controller que foram enviados por um formulário em uma JSP. 
+			              </strong>
+		              </div>
+		            </div>
+                  </div>
+                  <br />
+                  <div>
+                  	<i class="fa fa-square text-primary"></i> 
+                  	B) A injeção de dependência é feita após a criação do objeto, por meio dos métodos set de uma classe no estilo JavaBean, e não no momento da criação do objeto, tendo-se em vista que passar muitos argumentos no construtor pode tornar-se dispendioso.
+                  	<p>
+		              <a class="btn btn-danger btn-sm" data-toggle="collapse" href="#collapseJustificativaQuestao5B" aria-expanded="false" aria-controls="collapseExample"> Justificativa </a> 
+		            </p>
+		            <div class="collapse" id="collapseJustificativaQuestao5B">
+		              <div class="card card-body"><strong class="text-danger"> A injeção de dependência do Spring é realizada quando o Spring fornece o objeto já instanciado para o Construtor da Classe que utilizará o objeto, ou diretamente em uma variável de classe utilizando a anotação @Autowired. </strong></div>
+		            </div>
+                  </div>
+                  <br />
+                  <div>
+                  	<i class="fa fa-square text-primary"></i> 
+                  	C) A interface BeanFactory gerencia beans definidos em arquivos XML e trata recursos de mensagens.
+
+                  	<p>
+		              <a class="btn btn-danger btn-sm" data-toggle="collapse" href="#collapseJustificativaQuestao5C" aria-expanded="false" aria-controls="collapseExample"> Justificativa </a> 
+		            </p>
+		            <div class="collapse" id="collapseJustificativaQuestao5C">
+		              <div class="card card-body"><strong class="text-danger"> A interface BeanFactory não trata recursos de mensagens, apenas a ApplicationContext (que faz tudo que a BeanFactory faz), tem essa possibilidade. </strong></div>
+		            </div>
+                  </div>
+                  <br />
+                  <div>
+                  	<i class="fa fa-square text-primary"></i> 
+                  	D) O controlador AbstractWizardFormController, do módulo Spring MVC, permite suporte para o preenchimento de formulários a partir de determinada solicitação.
+                  	<p>
+		              <a class="btn btn-danger btn-sm" data-toggle="collapse" href="#collapseJustificativaQuestao5D" aria-expanded="false" aria-controls="collapseExample"> Justificativa </a> 
+		            </p>
+		            <div class="collapse" id="collapseJustificativaQuestao5D">
+		              <div class="card card-body"><strong class="text-danger"> Apesar de depreciado, o papel do AbstractWizardFormController é gerenciar a criação de um fluxo de formulário (Wizard) e não dar suporte para preenchimento de formulários. </strong></div>
+		            </div>
+                  </div>
+                  <br />
+                  <div>
+                  	<i class="fa fa-square text-primary"></i> 
+                  	E) A porta de entrada do navegador web para a arquitetura Spring MVC Web é a componente Interface (JSP/HTML).
+                  	<p>
+		              <a class="btn btn-danger btn-sm" data-toggle="collapse" href="#collapseJustificativaQuestao5E" aria-expanded="false" aria-controls="collapseExample"> Justificativa </a> 
+		            </p>
+		            <div class="collapse" id="collapseJustificativaQuestao5E">
+		              <div class="card card-body"><strong class="text-danger"> O View do MVC do Spring é baseado em JSP. O Spring só aceita a extensão HTML com a utilização do Thymeleaf com o Spring Boot. </strong></div>
+		            </div>
+                  </div>
+                </div>
+                
+                
+                <div class="tab-pane fade" id="vtab-extended7">
+                  <h3>
+                    <i class="fa fa-edit text-primary"></i> Questão 7
+                  </h3>
+                  <br/>
+                  <h4>
+                  	Spring é um framework que suporta a publicação de mensagens para determinado tópico de mensagens para auxílio no desenvolvimento de sistemas complexos. Nesse modelo, o desenvolvedor master não sabe da existência do desenvolvedor associado e vice-versa.
+                  </h4>
+                  <hr/>
+                  
+                  
+                  <div>
+                  	<i class="fa fa-square text-primary"></i> 
+                  	C) Certo
+                  </div>
+                  <br />
+                  <div>
+                  	<i class="fa fa-check-square text-primary"></i> 
+                  	<strong class="text-primary">E) Errado</strong>
+                  	<p>
+		              <a class="btn btn-primary btn-sm" data-toggle="collapse" href="#collapseJustificativaQuestao7" aria-expanded="false" aria-controls="collapseExample"> Justificativa </a> 
+		            </p>
+		            <div class="collapse" id="collapseJustificativaQuestao7">
+		              <div class="card card-body">
+			              <strong class="text-primary"> 
+			              	Spring Framework é um framework baseado na linguagem de programação Java que foi criado com o objetivo de facilitar ainda mais o desenvolvimento de aplicações web. 
+			              </strong>
+		              </div>
+		            </div>
+                  </div>
+                </div>
+                
+                <div class="tab-pane fade" id="vtab-extended6">
+                  <h3>
+                    Questão 6
+                  </h3>
+                  <br/>
+                  <h4>
+                  	No Spring, as configurações de segurança são realizadas no arquivo applicationContext-security.xml, e, para que, qualquer página ou diretório seja, seguro, é necessário adicionar a esse arquivo o elemento intercept-url.
+                  </h4>
+                  <hr/>
+                  
+                  <div>
+                  	<i class="fa fa-check-square text-primary"></i> 
+                  	<strong class="text-primary">C) Certo</strong>
+                  </div>
+                  <br />
+                  <div>
+                  	<i class="fa fa-square text-primary"></i> 
+                  	E) Errado
+                  </div>
+                </div>
+                
+                
+            </div>
+          </div>
+        </div>
+        <!-- Why AppStrap -->
+        <br />
+      </div>
+      <!-- Hiring MDR block -->
+      <div class="p-3 text-center text-lg-left bg-dark text-white overlay overlay-primary overlay-op-9" data-animate="fadeIn" data-bg-img="assets/img/backgrounds/zfg9gz7ylcu-dalibor-bosnjakovic.jpg">
+        <div class="container">
+          <div class="row">
+            <div class="col-12 col-lg-12 py-2" align="center">
+            	<img src="assets/img/logoS2it.png">
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Features -->
+      <div id="features" class="container py-4 py-lg-6">
+        <div data-animate="fadeIn" data-animate-duration="0.6">
+          <hr class="hr-lg mt-0 mb-3 w-10 mx-auto hr-primary" />
+          <h2 class="text-center text-uppercase font-weight-bold my-0">
+            Desafios
+          </h2>
+          <h5 class="text-center font-weight-light mt-2 mb-0 text-muted">
+            Questões 8 e 9
+          </h5>
+          <hr class="mb-5 w-50 mx-auto" />
+        </div>
+        <div class="row text-center">
+          <div class="col-lg-6 py-2" data-animate="fadeIn" data-animate-delay="0.1">
+            <i class="fa fa-code icon-5x text-primary"></i> 
+            <h4 class="mt-2">
+              Questão 8
+            </h4>
+            <p>Clique no botão abaixo para ver a solução do resultado da questão 8</p>
+            <a class="btn btn-primary btn-sm" th:href="${'/questao8'}"> Ver Solução </a>
+          </div>
+          <div class="col-lg-6 py-2" data-animate="fadeIn" data-animate-delay="0.2">
+            <i class="fa fa-code icon-5x text-primary"></i> 
+            <h4 class="mt-2">
+              Questão 9
+            </h4>
+            <p>Clique no botão abaixo para ver a solução do resultado da questão 9</p>
+            <a class="btn btn-primary btn-sm" th:href="${'/questao9'}"> Ver Solução </a>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <!-- ======== @Region: #footer ======== -->
+    <footer id="footer" class="py-3">
+      <div class="container">
+        <div class="row">
+          <!--@todo: replace with company copyright details-->
+          <div class="col-md-6">
+            <p class="mb-0 text-sm">Copyright 2018 &copy; Julio Falbo</p>
+            <ul class="list-inline footer-links mb-0 text-sm">
+            </ul>
+          </div>
+          <div class="col-md-6 flex-valign">
+            <div class="float-md-right ml-md-auto">
+              <!--@todo: replace with company social media details-->
+              <a href="https://www.linkedin.com/in/juliofalbo/" target="_blank" class="btn btn-sm btn-icon btn-dark btn-rounded"><i class="fab fa-linkedin-in"></i></a>
+              <a href="https://github.com/juliofalbo" target="_blank" class="btn btn-sm btn-icon btn-dark btn-rounded"><i class="fab fa-github"></i></a>
+              <a href="#top" class="btn btn-sm btn-icon btn-dark btn-rounded" title="Back to top"><i class="fa fa-chevron-up"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    
+    
+    <!--jQuery 3.2.1 via CDN -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <!-- Popper 1.12.9 via CDN, needed for Bootstrap Tooltips & Popovers -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+    
+    <!-- Bootstrap v4.0.0 JS via CDN -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+    
+    
+    <!-- JS plugins required on all pages NOTE: Additional non-required plugins are loaded ondemand as of AppStrap 2.5 To disable this and load plugin assets manually simple add data-plugins-manual=true to the body tag -->
+    
+    <!--Custom scripts & AppStrap API integration -->
+    <script src="assets/js/custom-script.js"></script>
+    <!--AppStrap scripts mainly used to trigger libraries/plugins -->
+    <script src="assets/js/script.min.js"></script>
+  </body>
+</html>

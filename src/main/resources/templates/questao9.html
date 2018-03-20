@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+  <head>
+    <title>Avaliação S2iT - Júlio Falbo</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    
+    <!-- @todo: fill with your company info or remove -->
+    <meta name="description" content="">
+    <meta name="author" content="Themelize.me" />
+    
+    <!-- Bootstrap v4.0.0 CSS via CDN -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" />
+    
+    <!-- Plugins required on all pages NOTE: Additional non-required plugins are loaded ondemand as of AppStrap 2.5 -->
+    
+    <!-- Theme style -->
+    <link href="assets/css/theme-style.min.css" rel="stylesheet" />
+    
+    <!--Your custom colour override-->
+    <link href="assets/css/colour-blue.css" id="colour-scheme" rel="stylesheet">
+    
+    <!-- Your custom override -->
+    <link href="assets/css/custom-style.css" rel="stylesheet" />
+    
+    <!-- Optional: ICON SETS -->
+    <!-- Iconset: Font Awesome 5.0.4 via CDN -->
+    <link href="https://use.fontawesome.com/releases/v5.0.4/css/all.css" rel="stylesheet" />
+    <!-- Iconset: flag icons - http://lipis.github.io/flag-icon-css/ -->
+    <link href="assets/plugins/flag-icon-css/css/flag-icon.min.css" rel="stylesheet" />
+    <!-- Iconset: ionicons - http://ionicons.com/ -->
+    <link href="http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css" rel="stylesheet" />
+    <!-- Iconset: Linearicons - https://linearicons.com/free -->
+    <link href="https://cdn.linearicons.com/free/1.0.0/icon-font.min.css" rel="stylesheet" />
+    
+    <!-- Le fav and touch icons - @todo: fill with your icons or remove, try https://realfavicongenerator.net -->
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/favicons/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/favicons/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/favicons/favicon-16x16.png" />
+    <link rel="manifest" href="assets/favicons/manifest.json" />
+    <link rel="shortcut icon" href="assets/favicons/favicon.ico" />
+    <meta name="msapplication-config" content="assets/favicons/browserconfig.xml" />
+    <meta name="theme-color" content="#ffffff" />
+    
+    <!-- Google fonts -->
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,700,300' rel='stylesheet' type='text/css' />
+    <link href='http://fonts.googleapis.com/css?family=Rambla:400,700' rel='stylesheet' type='text/css' />
+    <link href='http://fonts.googleapis.com/css?family=Calligraffitti' rel='stylesheet' type='text/css' />
+    <link href='http://fonts.googleapis.com/css?family=Roboto+Slab:400,700' rel='stylesheet' type='text/css' />
+    
+    <!--Plugin: Retina.js (high def image replacement) - @see: http://retinajs.com/-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/retina.js/1.3.0/retina.min.js"></script>
+  </head>
+  
+  <!-- ======== @Region: body ======== -->
+  <body class="page page-customers navbar-layout-default">
+    
+    <!-- @plugin: page loading indicator, delete to remove loader -->
+    <div class="page-loader" data-toggle="page-loader"></div>
+    
+    <a href="#content" id="top" class="sr-only">Skip to content</a> 
+    
+    <!-- ======== @Region: #header ======== -->
+    <div id="header">
+      
+      <!--Hidden Header Region-->
+      <div class="header-hidden collapse">
+        <div class="header-hidden-inner container text-white">
+          <div class="row">
+            <div class="col-sm-6">
+              <h3>
+                Sobre mim
+              </h3>
+              <p>Me chamo Júlio Falbo e sou apenas um profissional que está na constante busca por mais conhecimento!</p>
+              <a href="http://juliofalbo.tech/" class="btn btn-sm btn-primary" target="_blank">Saiba mais</a> 
+            </div>
+            <div class="col-sm-6">
+              <!--@todo: replace with company contact details-->
+              <h3>
+                Contato
+              </h3>
+              <address>
+                <p class="mb-1">
+                  <abbr title="Phone"><i class="fa fa-phone"></i></abbr>
+                  +55 (21) 98867-9866
+                </p>
+                <p class="mb-1">
+                  <abbr title="Email"><i class="fa fa-envelope"></i></abbr>
+                  julio.falbo.rj@gmail.com
+                </p>
+              </address>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <!--Header upper region-->
+      <div class="header-upper">
+        <!--Show/hide trigger for #hidden-header -->
+        <div id="header-hidden-link">
+          <a href="#" title="Click me you'll get a surprise" class="show-hide" data-toggle="show-hide" data-target=".header-hidden"><i></i>Open</a>
+        </div>
+        <!-- all direct children of the .header-inner element will be vertically aligned with each other you can override all the behaviours using the flexbox utilities (flexbox.htm) All elements with .header-brand & .header-block-flex wrappers will automatically be aligned inline & vertically using flexbox, this can be overridden using the flexbox utilities (flexbox.htm) Use .header-block to stack elements within on small screen & "float" on larger screens use .order-first or/and .order-last classes to make an element show first or last within .header-inner or .headr-block elements -->
+        <div class="header-inner container">
+          <!--social media icons-->
+          <div class="nav nav-icons header-block order-12">
+            <!--@todo: replace with company social media details-->
+            <a href="https://www.linkedin.com/in/juliofalbo/" target="_blank" class="nav-link"> <i class="fab fa-linkedin icon-1x"></i> <span class="sr-only">Linkedin</span> </a>
+            <a href="https://github.com/juliofalbo" target="_blank" class="nav-link"> <i class="fab fa-github icon-1x"></i> <span class="sr-only">Github</span> </a>
+          </div>
+        </div>
+      </div>
+      <div data-toggle="sticky">
+        
+        <!--Header & Branding region-->
+        <div class="header">
+          <!-- all direct children of the .header-inner element will be vertically aligned with each other you can override all the behaviours using the flexbox utilities (flexbox.htm) All elements with .header-brand & .header-block-flex wrappers will automatically be aligned inline & vertically using flexbox, this can be overridden using the flexbox utilities (flexbox.htm) Use .header-block to stack elements within on small screen & "float" on larger screens use .order-first or/and .order-last classes to make an element show first or last within .header-inner or .headr-block elements -->
+          <div class="header-inner container">
+            <!--branding/logo -->
+            <div class="header-brand">
+              <a class="header-brand-text" href="index.html" title="Home">
+              	<img src="assets/img/logoS2it2.png">
+              </a>
+              <div class="header-divider d-none d-lg-block"></div>
+              <div class="header-slogan d-none d-lg-block">Avaliação</div>
+            </div>
+            <!-- other header content -->
+            <div class="header-block order-12">
+              
+              <!-- mobile collapse menu button - data-toggle="collapse" = default BS menu - data-toggle="jpanel-menu" = jPanel Menu - data-toggle="overlay" = Overlay Menu -->
+              <a href="#top" class="btn btn-link btn-icon header-btn float-right d-lg-none" data-toggle="jpanel-menu" data-target=".navbar-main" data-direction="right"> <i class="fa fa-bars"></i> </a>
+            </div>
+            
+            <div class="navbar navbar-expand-md navbar-static-top">
+              <!--everything within this div is collapsed on mobile-->
+              <div class="navbar-main collapse">
+                <!--main navigation-->
+                <ul class="nav navbar-nav navbar-nav-onepager">
+                  <li class="nav-item">
+                    <a th:href="${'/'}" class="nav-link"> <i class="fa fa-home nav-link-icon"></i> <span class="d-none">Home</span> </a>
+                  </li>
+                </ul>
+              </div>
+              <!--/.navbar-collapse -->
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <!-- ======== @Region: #content ======== -->
+  <div id="content">
+    
+    <div class="container">
+      <h2 class="title-divider">
+        <span>Questão <span class="font-weight-normal text-muted">9</span></span>
+        <small>Vamos lá!</small>
+      </h2>
+      <h3>
+        Considerando a estrutura de uma árvore binária:
+      </h3>
+      <br/>
+       <code class="hljs xml">
+       	<span class="hljs-string"><strong>public</strong></span> <span class="hljs-string"><strong>class</strong></span> BinaryTree {
+       		<br/>
+			&nbsp;&nbsp; <span class="hljs-string"><strong>int</strong></span> valor;
+			<br/>
+			&nbsp;&nbsp; BinaryTree left;
+			<br/>
+			&nbsp;&nbsp; BinaryTree right;
+			<br/>
+		}
+       </code>
+        
+        <br/>
+        
+        <h3>Desenvolva um método que dado um nó da árvore calcule a soma de todos os nós subsequentes. </h3>
+        
+        <hr />
+        
+        <h2 class="title-divider">
+	        <span>Solução da <span class="font-weight-normal text-muted">Questão 9</span></span>
+	        <small>Vamos lá!</small>
+      	</h2>
+        
+        <div class="card card-body text-center">
+         <div class="card-ribbon card-ribbon-top card-ribbon-left bg-danger text-white">Importante</div>
+         <h4 class="card-title">
+           Teste
+         </h4>
+         <p class="card-text">
+         	Para executar o teste do método responsável pela solução da questão, foi criada uma classe Questao9ServiceTest.
+         </p>
+         <p>
+         	Basta executar a mesma e o JUnit apresentará o resultado.
+         </p>
+       </div>
+        
+        
+        <br/>
+        
+        <div class="alert alert-primary" role="alert" id="resultado" th:if="${numeroC != null && numeroC != ''}">
+       	<script>
+			window.scrollTo(0, document.body.scrollHeight);
+		</script>
+         <h4 class="alert-heading">
+           Resultado:
+         </h4>
+         <code><h3 th:text=${numeroC}></h3></code>
+       </div>
+        
+        <br/>
+        
+        <div class="my-1">
+             <a data-toggle="collapse" href="#code-block-1" class="code-block-link show" aria-expanded="true">Visualizar Código</a>
+             <div class="collapse" id="code-block-1">
+             	<code class="hljs xml">
+             		<span class="hljs-string"><strong>public</strong></span> <span class="hljs-string"><strong>int</strong></span> somarValorDosNos(BinaryTree atual) {
+             		<br/>
+	             	&nbsp;&nbsp; <span class="hljs-string"><strong>int</strong></span> soma = atual.getValor();
+		           	<br/>
+		           	&nbsp;&nbsp; soma += atual.getLeft() != <span class="hljs-string"><strong>null</strong></span> ? somarValorDosNos(atual.getLeft()) : 0;
+		           	<br/>
+		           	&nbsp;&nbsp; soma += atual.getRight() != <span class="hljs-string"><strong>null</strong></span> ? somarValorDosNos(atual.getRight()) : 0;
+		           	<br/>
+		           	&nbsp;&nbsp; <span class="hljs-string"><strong>return</strong></span> soma;
+		           	<br/>
+		           	}
+				</code>
+			</div>
+         </div>
+        
+      </div>
+    </div>
+      
+    <!-- ======== @Region: #content-below ======== -->
+    <div id="content-below">
+      <!-- Awesome features call to action -->
+      <div class="bg-primary text-white py-4">
+        <div class="container">
+          <div class="row text-center text-lg-left">
+            <div class="col-12 col-lg-7 py-2">
+              <h2 class="text-uppercase font-weight-bold mt-0 mb-2">
+                <span class="text-shadow">Código</span> <span class="text-primary-darkend">Completo</span>
+              </h2>
+              <h5 class="text-faded">
+                O código completo da questão 9 se encontra em um repositório no Github 
+              </h5>
+            </div>
+            <div class="col-12 col-lg-5 py-2 text-lg-right">
+              <a href="#" class="btn btn-lg btn-primary btn-invert btn-rounded py-3 px-4">Ver Código<i class="fa fa-arrow-right ml-2"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <!-- ======== @Region: #footer ======== -->
+    <footer id="footer" class="p-0">
+      <hr class="my-0 hr-blank op-2" />
+      <!--@todo: replace with company copyright details-->
+      <div class="bg-inverse-dark text-sm py-3">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-6">
+              <p class="mb-0">Copyright 2018 &copy; Julio Falbo</p>
+            </div>
+          </div>
+          <a href="#top" class="btn btn-icon btn-dark pos-fixed pos-b pos-r mr-3 mb-3 scroll-state-hidden" title="Back to top" data-scroll="scroll-state"><i class="fa fa-chevron-up"></i></a>
+        </div>
+      </div>
+    </footer>
+    
+    <!--jQuery 3.2.1 via CDN -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <!-- Popper 1.12.9 via CDN, needed for Bootstrap Tooltips & Popovers -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+    
+    <!-- Bootstrap v4.0.0 JS via CDN -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+    
+    
+    <!-- JS plugins required on all pages NOTE: Additional non-required plugins are loaded ondemand as of AppStrap 2.5 To disable this and load plugin assets manually simple add data-plugins-manual=true to the body tag -->
+    
+    <!--Custom scripts & AppStrap API integration -->
+    <script src="assets/js/custom-script.js"></script>
+    <!--AppStrap scripts mainly used to trigger libraries/plugins -->
+    <script src="assets/js/script.min.js"></script>
+  </body>
+</html>
