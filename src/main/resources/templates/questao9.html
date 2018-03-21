@@ -185,22 +185,32 @@
       	</h2>
         
         <div class="card card-body text-center">
-         <div class="card-ribbon card-ribbon-top card-ribbon-left bg-danger text-white">Importante</div>
+         <div class="card-ribbon card-ribbon-top card-ribbon-left bg-success text-white">Código</div>
          <h4 class="card-title">
            Teste
          </h4>
          <p class="card-text">
-         	Para executar o teste do método responsável pela solução da questão, foi criada uma classe Questao9ServiceTest.
+         	Para executar o teste do método responsável pela solução da questão, foi criada uma classe <strong>Questao9ServiceTest</strong>.
          </p>
          <p>
          	Basta executar a mesma e o JUnit apresentará o resultado.
+         </p>
+       </div>
+       
+       <div class="card card-body text-center">
+         <div class="card-ribbon card-ribbon-top card-ribbon-left bg-danger text-white">Importante</div>
+         <h4 class="card-title">
+           Observação
+         </h4>
+         <p class="card-text">
+         	Caso seja passado <code>null</code> como parâmetro para o método <code>somarValorDosNos</code>, será retornado <code><strong>0</strong></code>.
          </p>
        </div>
         
         
         <br/>
         
-        <div class="alert alert-primary" role="alert" id="resultado" th:if="${numeroC != null && numeroC != ''}">
+       <div class="alert alert-primary" role="alert" id="resultado" th:if="${numeroC != null && numeroC != ''}">
        	<script>
 			window.scrollTo(0, document.body.scrollHeight);
 		</script>
@@ -217,6 +227,11 @@
              <div class="collapse" id="code-block-1">
              	<code class="hljs xml">
              		<span class="hljs-string"><strong>public</strong></span> <span class="hljs-string"><strong>int</strong></span> somarValorDosNos(BinaryTree atual) {
+             		<br/>
+             		&nbsp;&nbsp; <span class="hljs-string"><strong>if</strong></span>(atual == <span class="hljs-string"><strong>null</strong></span>)
+             		<br/>
+             		&nbsp;&nbsp;&nbsp;&nbsp; <span class="hljs-string"><strong>return</strong></span> 0;
+             		<br/>
              		<br/>
 	             	&nbsp;&nbsp; <span class="hljs-string"><strong>int</strong></span> soma = atual.getValor();
 		           	<br/>

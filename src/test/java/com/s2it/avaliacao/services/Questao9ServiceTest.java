@@ -61,6 +61,10 @@ public class Questao9ServiceTest {
 		int soma = questao9Service.somarValorDosNos(atual);
 		
 		assertEquals(soma, 55);
+		
+		int soma2 = questao9Service.somarValorDosNos(null);
+		
+		assertEquals(soma2, 0);
 	}
 	
 }

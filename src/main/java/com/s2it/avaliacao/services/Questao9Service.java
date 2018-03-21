@@ -8,6 +8,10 @@ import com.s2it.avaliacao.models.BinaryTree;
 public class Questao9Service {
 
 	public int somarValorDosNos(BinaryTree atual) {
+
+		if (atual == null)
+			return 0;
+
 		int soma = atual.getValor();
 
 		soma += atual.getLeft() != null ? somarValorDosNos(atual.getLeft()) : 0;
@@ -15,5 +19,5 @@ public class Questao9Service {
 
 		return soma;
 	}
-	
+
 }
